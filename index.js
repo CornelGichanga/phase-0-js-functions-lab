@@ -1,4 +1,4 @@
-Function calculateTax (amount) {
+function calculateTax(amount) {
     return amount * 0.10;
 }
 
@@ -11,14 +11,14 @@ function findMaximum(num1, num2) {
 }
 
 function isPalindrome(word) {
-    const cleaned = word.toLowerCase().replaced
-    const reversed = cleaned.split
+    const cleaned = word.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const reversed = cleaned.split('').reverse().join('');
     return cleaned=== reversed;
 }
 
-function calculateDiscountedPrice(originalPrice, discountPercentage {
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
     return originalPrice * (1 - discountPercentage/100);
-})
+}
 
 
 
